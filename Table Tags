@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tags</title>
+    <style>
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tfoot {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Info</h2>
+
+    
+    <table>
+        
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Salary (₹)</th>
+            </tr>
+        </thead>
+
+        
+        <tbody>
+            <tr>
+                <td>EMP001</td>
+                <td>Sumeet Singh</td>
+                <td>Software Engineer</td>
+                <td>IT</td>
+                <td>80,000</td>
+            </tr>
+            <tr>
+                <td>EMP002</td>
+                <td>Asle</td>
+                <td>Project Manager</td>
+                <td>Operations</td>
+                <td>95,000</td>
+            </tr>
+            <tr>
+                <td>EMP003</td>
+                <td>Ren</td>
+                <td>HR Specialist</td>
+                <td>Human Resources</td>
+                <td>60,000</td>
+            </tr>
+            <tr>
+                <td>EMP004</td>
+                <td>Daichi</td>
+                <td>Financial Analyst</td>
+                <td>Finance</td>
+                <td>75,000</td>
+            </tr>
+        </tbody>
+
+        
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Employees</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
